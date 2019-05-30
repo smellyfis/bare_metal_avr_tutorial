@@ -28,7 +28,7 @@ void main (void)
 
     while(1)
     {
-        /*TODO sleep_mode */
+        /* go into sleep_mode since acting on interrupts only */
         sleep_mode();
     }
 }
