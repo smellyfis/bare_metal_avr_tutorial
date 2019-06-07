@@ -6,18 +6,16 @@
 void main (void)
 {
     /* set Pin 5 of portB for output */
-    /* DDRB |= _BV(DDB5); */
-    /* mega - pin 5 port k */
-    DDRK |= _BV(DDK5);
+    DDRB |= _BV(DDB5);
 
     while(1)
     {
         /* Turn on PortB pin 5 */
-        PORTK |= _BV(PORTK5);
+        PORTB |= _BV(PORTB5);
         _delay_ms(BLINK_DELAY_MS);
 
         /* Turn off PortB pin 5 */
-        PORTK &= ~_BV(PORTK5);
+        PORTB &= ~_BV(PORTB5);
         _delay_ms(BLINK_DELAY_MS);
     }
 }
